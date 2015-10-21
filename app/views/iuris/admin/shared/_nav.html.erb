@@ -1,0 +1,11 @@
+<ul class="nav nav-pills navbar-right">
+	<li data-iuris-hook='admin-links' role="presentation" class="<%= active(admin_path) %>">
+		<%= link_to 'Panel de control', admin_path %>
+	</li>
+	<li role="presentation" class="<%= active(iuris.admin_users_path) %>">
+		<%= link_to iuris.admin_users_path do %>
+			Usuarios <span class="badge"><%= Iuris::User.count %></span>
+		<% end %>
+	</li>
+</ul>
+<div class="clearfix"></div>
