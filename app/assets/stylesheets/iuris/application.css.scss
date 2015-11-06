@@ -13,11 +13,21 @@
  *= require_tree .
  *= require_self
  *  remove this line for testing other modules
- * require 'iuris/tasks/tasks'
+ *= require 'iuris/tasks/tasks'
+ *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+ *= require dataTables/extras/dataTables.responsive
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
 body {
 	padding-top:65px;
 }
-/*require 'iuris/tasks/tasks'*/
+#datatable_length, #datatable_filter {
+	padding: 10px;
+}
+#datatable_info, #datatable_paginate {
+	padding: 0 10px;
+}
+.table-responsive {
+	overflow-x: initial;
+}
